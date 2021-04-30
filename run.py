@@ -87,7 +87,7 @@ if __name__ == '__main__':
     alpha = math.sqrt(num_rels)
     num_epochs = 200
     learning_rate = 1e-5
-    serialization_dir = './results/bert2trans-l={}-{}-{}--{}--{:.1f}-{}'.format(n_layers,learning_rate, dataset_name, batch_size,alpha,seed)
+    serialization_dir = '/results/bert2trans-l={}-{}-{}--{}--{:.1f}-{}'.format(n_layers,learning_rate, dataset_name, batch_size,alpha,seed)
 
     dataset_reader = build_dataset_reader(model_name, rel_dict_path)
     train_data, dev_data, test_data = read_data(dataset_reader)
